@@ -22,4 +22,9 @@ $( function(){
   $("#right").click( function(){
     $('#move').animate( { 'left': '+=200px' } , { 'duration': 1000 } );
   });
+  $("#center").click( function(){
+    var optionObj = new Object();
+    optionObj.left = $('body').outerWidth() / 2 - 100;
+    $('#move').animate( optionObj , { 'duration': 1000 } );
+  });
 });
